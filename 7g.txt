@@ -1,0 +1,26 @@
+	• First install ubuntu from ms store --> create user -- > riyonis-->boombaby69 [username & pass]
+	New User
+	• Type in add user --> sudo adduser nrupa --> put pass above -- it will ask new pass again and type in again 
+	• Enter the new values and leave it same -- enter 4 times --- click yes -- now user has been added 
+	Key generation
+	• ssh-keygen --> enter --enter passphrase - enter until key generated 
+	• sudo apt update(updates packages)--->enter pass
+	• sudo apt install ansible -y --->ansible --version
+	Create inventory file 
+	•  vi inventory.ini --> type localhost ansible_connection=local--->press esc -- type :wq (enter)
+	Executing inventory file
+	•  ansible-inventory -i inventory.ini --list
+	Checking ping for this
+	•  ansible all -i inventory.ini -m ping
+	Creating playbook
+	•  nano basic_playbook.yml --- > copy paste the below --> and to save ctrl+o --> enter --> ctrl+x to exit 
+	- name: Create a directory 
+	  hosts: localhost tasks: 
+	  name: Create the 'my_test_directory' 
+	  ansible.builtin.file: 
+	      path: /tmp/my_test_directory 
+	      state: directory
+	•  ansible-playbook -i inventory.ini basic_playbook.yml (playbook name given)
+	Repeat step by making change in so it shows changes made 1
+	Check for my test directory
+	 ls /tmp
