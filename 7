@@ -24,3 +24,11 @@
 	Repeat step by making change in so it shows changes made 1
 	Check for my test directory
 	 ls /tmp
+
+
+          - name: My First Playbook
+	    hosts: localhost
+            tasks: 
+	    	- name: Print a message
+      		  debug:
+	  		msg: "Hello from here!"
