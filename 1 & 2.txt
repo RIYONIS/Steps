@@ -1,0 +1,32 @@
+PG 1
+
+Jdk installation
+	• Download jdk ver- 17 to 20 --> installer --> copy path --> install
+	• Paste location--> bin-->bin loc --> copy--> my comp--> properties -- advanced --- environmental variables -- path -- edit -- new-- paste -- ok 
+	• Check cmd -> java --version  & javac -version
+
+Eclipse installation
+	• Eclipse ide -- download 25/3 --- install -- 1st option maven gradle -- done-- open 
+
+Maven
+	• Download maven --installation --binary distribution-- apache maven 3.9.9 zip-- download -- extract 
+	• My pc -- program files -- folder create [ apache-> maven->extract zip file to this location]
+	• apache-> maven-> maven-mvnd-1.0.2-windows-amd64 -> bin-> copy curr path -> windows key ->edit environmental variables -> edit -> new -> paste loc -> ok 
+	• Check cmd-> mvn -v
+
+Gradle 
+	• Download gradle -> installation -> release page-> 8.14 binary only
+	• My pc -- program files -- create folder [ Gradle ] -- open -- copy path
+	• Extract downloaded gradle loc to that path 
+	• Open gradle -- gradle-8.14 -- bin -- copy path -- windows key ->edit environmental variables -> edit -> new -> paste loc -> ok
+	• Check cmd -- gradle -v
+
+
+PG 2
+
+Working with Maven 
+	•  open eclipse -- file new  maven proj -- next -- change all catalogs to internal -- maven archetype quickstart 1.1---  grp id anything , artifact id - pro2 (or anything)  --- finish -- type y -- enter
+	• Right click on pro2-- run as-- maven build -- goal as ( package ) -- run 
+	• P2 -- main -- nrupa_devops.p2 -- app.java -- in hello world section (make some changes by adding more words or letters)  -- run -- ok -- done
+	
+	
