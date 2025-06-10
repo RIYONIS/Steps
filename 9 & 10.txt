@@ -1,0 +1,30 @@
+PG 9
+
+Azure Devops
+	• Search ms zure devops -- login -- my azure devops organization -- create new organiztion -- continue -- verify 
+	• Organiztion policies -- enable security policies(public policies)	 go back to --- nrupathuga -- program 9  make it public -- create proj
+	• Pipelines double click -- create pipeline -- github yaml -- click on any repository -- add passowrd-- approve and install -- pick an account (ur acc) -- done
+	Redirect back -- show more -- maven -- save & run - done
+
+
+PG 10
+
+mkdir maventest1
+cd maventest1
+
+mvn archetype:generate -DgroupId=com.dineshonjava -DartifactId=Javateam -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+
+git init
+git add .
+git commit -m “azure pipeline example”
+git branch -M main
+git remote add origin https://github.com/gurumurthy974/maventestazure.git
+git push -u origin main
+
+azure organization
+create new project in org- we have pipeline access for 
+pipelines --create-- pipeline 
+select GitHub -- YAML
+select repo --  with pom.xml 
+select maven -- save and run

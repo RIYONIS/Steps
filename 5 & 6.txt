@@ -1,0 +1,18 @@
+PG 5
+
+Installation of Jenkins
+	• Chrome -- jenkins.io -- download --scroll --windows 
+	• Run installer -- next -- next -- run as localsys -- give port as 8080 if already taken try smtg else -- next --change -- jdk21-- next -- next --install--finish
+	• Chrome -- localhost:8080 -- copy path -- paste in folder loc -- copy password-- paste -- continue -- install suggested -- skip & continue as admin -- save & host -- done
+
+
+PG 6
+
+Continuation with Jenkins     [ localhost:8080--> admin--> boombaby69]
+	• Chrome -- jenkins.io -- download --scroll --windows 
+	• Run installer -- next -- next -- run as localsys -- give port as 8080 if already taken try smtg else -- next --change -- jdk21-- next -- next --install--finish
+	• Chrome -- localhost:8080 -- copy path -- paste in folder loc -- copy password-- paste -- continue -- install suggested -- skip & continue as admin -- save & host -- done
+_______ same steps from pg 5 and then 
+	• Manage junkins -- available jenkins --maven integration plugin -- install
+	• Create new item -- mavent1 -- select freestyle object -- ok -- environment --select invoke top level maven targets -- type " clean install " in goals -- advance -- paste pom file loc from maven
+	• Build now -- success -- done!

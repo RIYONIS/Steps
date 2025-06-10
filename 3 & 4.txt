@@ -1,0 +1,21 @@
+PG 3
+
+Working with gradle
+	• Cmd- gradle init ---- enter for 4 times -- select 2  (groovy )---enter -- enter -- yes 
+	• Gradle init ---> y--> type of gradle (application)-->select language JAVA--> select  version 21-->give proj name --> select application structure 1---> select build script --> select framework JUnit4 --> genrate API yes
+	•  gradlew run -- enter --- done 
+
+
+
+PG 4
+
+Migration of maven
+	• open eclipse -- file new  maven proj -- next -- change all catalogs to internal -- maven archetype quickstart 1.1---  grp id anything , artifact id - p4 (or anything)  --- finish -- type y -- enter
+	• Right click on p4 -- show in local terminal -- terminal -- gradle init -- yes -- 2  -- yes -- gradle build--gradle clean -- go to app.java make changes and run ---build.gradle is available --in that add the below
+	• Double click on  build gradle in p2 - target -- in plugins add -->>   id 'application'
+	• Come outside plugins class and create new class 
+	application{
+	mainClass='nrupa_devops.p2.App'    // 'nrupa_devops.p2.App' this is ur name whatever u have given below src/main/java
+	}
+	• Save -- >>open app.java and Run -- done --> right click maven proj -- open local terminal -- then enter the below
+	•  -- gradle build -- gradle run
